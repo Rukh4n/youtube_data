@@ -25,3 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* untuk navbar mirip youtube */
+/* Sembunyikan scrollbar di semua browser */
+/* .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+} */
