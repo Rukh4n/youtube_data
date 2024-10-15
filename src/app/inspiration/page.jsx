@@ -88,7 +88,7 @@ export default function Inspiration() {
               {/* Recommended other videos */}
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-4">Rekomendasi Video Lainnya</h3>
-                <div className="max-h-96 overflow-y-scroll">
+                <div className="max-h-96 overflow-y-scroll b-dark">
                   {/* Limiting height and allowing scroll */}
                   <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4">
                     {videos
