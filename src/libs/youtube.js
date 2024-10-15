@@ -16,7 +16,7 @@ export const youtubeList = async (query, maxResults = 30) => {
             part: 'snippet',
             q: query,
             maxResults,
-            type: 'video', // Restrict results to video type
+            type: 'video', 
         });
 
         // Return the video data found
@@ -30,7 +30,7 @@ export const youtubeList = async (query, maxResults = 30) => {
 // Function to handle search requests
 export const searchFunction = async (req, res) => {
     if (req.method === 'GET') {
-        const { query } = req.query; // Get query from request
+        const { query } = req.query; 
 
         if (!query) {
             return res.status(400).json({ error: 'Query parameter is required' });

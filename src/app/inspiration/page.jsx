@@ -97,7 +97,7 @@ export default function Inspiration() {
                       .map((video) => (
                         <li
                           key={video.id.videoId}
-                          className="flex items-center cursor-pointer"
+                          className="flex items-center cursor-pointer bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-md transition-colors"
                           onClick={() => openModal(video)} // Open new video in modal
                         >
                           <img
@@ -109,7 +109,7 @@ export default function Inspiration() {
                             <h4 className="text-md font-semibold truncate">
                               {video.snippet.title}
                             </h4>
-                            <p className="text-gray-600 text-sm">
+                            <p className="text-gray-400 text-sm">
                               Published on: {new Date(video.snippet.publishedAt).toLocaleDateString()}
                             </p>
                           </div>
