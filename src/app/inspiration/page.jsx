@@ -41,7 +41,7 @@ export default function Inspiration() {
 
   return (
     <ClientLayout>
-      <div>
+      <div className="bg-gray-900 text-white min-h-screen">
         
         {/* Full-width Search Container */}
         <div className="mb-8 w-full"> 
@@ -49,7 +49,7 @@ export default function Inspiration() {
         </div>
 
         {/* Display loading message */}
-        {loading && <p>Loading videos...</p>}
+        {loading && <p className="text-gray-400">Loading videos...</p>}
 
         {/* Display error if any */}
         {error && <p className="text-red-500">{error}</p>}
@@ -60,9 +60,9 @@ export default function Inspiration() {
         {/* Modal for the selected video */}
         {isModalOpen && selectedVideo && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 backdrop-blur-sm">
-            <div className="bg-white p-6 rounded-lg relative w-full max-w-4xl">
+            <div className="bg-gray-800 p-6 rounded-lg relative w-full max-w-4xl text-white">
               <button
-                className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
                 onClick={closeModal}
               >
                 &times;
@@ -97,7 +97,7 @@ export default function Inspiration() {
                       .map((video) => (
                         <li
                           key={video.id.videoId}
-                          className="flex items-center cursor-pointer bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-md transition-colors"
+                          className="flex items-center cursor-pointer bg-gray-700 hover:bg-gray-600 text-white p-4 rounded-md transition-colors"
                           onClick={() => openModal(video)} // Open new video in modal
                         >
                           <img
